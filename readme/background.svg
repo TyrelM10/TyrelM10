@@ -1,0 +1,292 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <!-- Background with darker gradient -->
+  <defs>
+    <!-- Darker gradient background -->
+    <linearGradient id="backgroundGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#000011;" />
+      <stop offset="50%" style="stop-color:#000022;" />
+      <stop offset="100%" style="stop-color:#000019;" />
+    </linearGradient>
+    
+    <!-- Refined glow filter for smoother appearance -->
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="2.5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    
+    <!-- High resolution star pattern -->
+    <pattern id="stars" x="0" y="0" width="200" height="200" patternUnits="userSpaceOnUse">
+      <circle cx="20" cy="20" r="0.5" fill="white" opacity="0.4">
+        <animate attributeName="opacity" values="0.4;0.7;0.4" dur="3s" repeatCount="indefinite" />
+      </circle>
+      <circle cx="50" cy="70" r="0.4" fill="white" opacity="0.3">
+        <animate attributeName="opacity" values="0.3;0.6;0.3" dur="2.5s" repeatCount="indefinite" />
+      </circle>
+      <circle cx="90" cy="30" r="0.45" fill="white" opacity="0.5">
+        <animate attributeName="opacity" values="0.5;0.8;0.5" dur="4s" repeatCount="indefinite" />
+      </circle>
+      <circle cx="120" cy="100" r="0.35" fill="white" opacity="0.4">
+        <animate attributeName="opacity" values="0.4;0.7;0.4" dur="3.3s" repeatCount="indefinite" />
+      </circle>
+      <circle cx="150" cy="50" r="0.55" fill="white" opacity="0.3">
+        <animate attributeName="opacity" values="0.3;0.5;0.3" dur="2.8s" repeatCount="indefinite" />
+      </circle>
+      <circle cx="180" cy="130" r="0.45" fill="white" opacity="0.5">
+        <animate attributeName="opacity" values="0.5;0.7;0.5" dur="3.5s" repeatCount="indefinite" />
+      </circle>
+    </pattern>
+  </defs>
+
+  <!-- Dark starry background -->
+  <rect width="100%" height="100%" fill="url(#backgroundGradient)" />
+  <rect width="100%" height="100%" fill="url(#stars)" opacity="0.4" />
+  
+  <!-- The main symbol group - properly centered -->
+  <g transform="translate(25, 0)">
+    <!-- 3D effect subtle shadows -->
+    <g id="shadows" opacity="0.5" transform="translate(2,2)" stroke="#102040" stroke-width="6" filter="url(#glow)">
+      <!-- Vertical line shadow -->
+      <line x1="175" y1="100" x2="175" y2="400" opacity="0">
+        <animate attributeName="opacity" from="0" to="0.3" dur="2s" begin="0s" fill="freeze" />
+      </line>
+      
+      <!-- Top horizontal line shadow -->
+      <line x1="90" y1="150" x2="300" y2="150" opacity="0">
+        <animate attributeName="opacity" from="0" to="0.3" dur="1.8s" begin="0.3s" fill="freeze" />
+      </line>
+      
+      <!-- Middle horizontal line shadow -->
+      <line x1="90" y1="275" x2="175" y2="275" opacity="0">
+        <animate attributeName="opacity" from="0" to="0.3" dur="1.7s" begin="0.6s" fill="freeze" />
+      </line>
+      
+      <!-- Bottom horizontal line shadow -->
+      <line x1="90" y1="400" x2="300" y2="400" opacity="0">
+        <animate attributeName="opacity" from="0" to="0.3" dur="1.6s" begin="0.9s" fill="freeze" />
+      </line>
+      
+      <!-- Diagonal line shadow -->
+      <line x1="175" y1="275" x2="300" y2="400" opacity="0">
+        <animate attributeName="opacity" from="0" to="0.3" dur="2.2s" begin="1.2s" fill="freeze" />
+      </line>
+      
+      <!-- Right vertical line of square shadow -->
+      <line x1="300" y1="150" x2="300" y2="275" opacity="0">
+        <animate attributeName="opacity" from="0" to="0.3" dur="1s" begin="1.5s" fill="freeze" />
+      </line>
+      
+      <!-- Bottom horizontal line of square shadow -->
+      <line x1="175" y1="275" x2="300" y2="275" opacity="0">
+        <animate attributeName="opacity" from="0" to="0.3" dur="1s" begin="1.8s" fill="freeze" />
+      </line>
+    </g>
+    
+    <!-- The main lines of the symbol - properly connected -->
+    <g stroke="#80a0ff" stroke-width="6" filter="url(#glow)" stroke-linecap="square" stroke-linejoin="miter">
+      <!-- Vertical line -->
+      <line x1="175" y1="100" x2="175" y2="400">
+        <animateTransform attributeName="transform"
+                       type="translate"
+                       from="0 -500"
+                       to="0 0"
+                       dur="2s"
+                       begin="0s"
+                       fill="freeze"/>
+        <animate attributeName="stroke" 
+                 values="#304080;#80a0ff;#304080" 
+                 dur="3s" 
+                 repeatCount="indefinite"/>
+      </line>
+      
+      <!-- Top horizontal line -->
+      <line x1="90" y1="150" x2="300" y2="150">
+        <animateTransform attributeName="transform"
+                       type="translate"
+                       from="-500 0"
+                       to="0 0"
+                       dur="1.8s"
+                       begin="0.3s"
+                       fill="freeze"/>
+        <animate attributeName="stroke" 
+                 values="#405090;#80a0ff;#405090" 
+                 dur="2.7s" 
+                 repeatCount="indefinite"/>
+      </line>
+      
+      <!-- Middle horizontal line -->
+      <line x1="90" y1="275" x2="175" y2="275">
+        <animateTransform attributeName="transform"
+                       type="translate"
+                       from="-500 0"
+                       to="0 0"
+                       dur="1.7s"
+                       begin="0.6s"
+                       fill="freeze"/>
+        <animate attributeName="stroke" 
+                 values="#506090;#80a0ff;#506090" 
+                 dur="2.5s" 
+                 repeatCount="indefinite"/>
+      </line>
+      
+      <!-- Complete bottom horizontal line -->
+      <line x1="90" y1="400" x2="300" y2="400">
+        <animateTransform attributeName="transform"
+                       type="translate"
+                       from="-500 0"
+                       to="0 0"
+                       dur="1.6s"
+                       begin="0.9s"
+                       fill="freeze"/>
+        <animate attributeName="stroke" 
+                 values="#405080;#80a0ff;#405080" 
+                 dur="2.9s" 
+                 repeatCount="indefinite"/>
+      </line>
+      
+      <!-- Diagonal line -->
+      <line x1="175" y1="275" x2="300" y2="400">
+        <animateTransform attributeName="transform"
+                       type="translate"
+                       from="500 -500"
+                       to="0 0"
+                       dur="2.2s"
+                       begin="1.2s"
+                       fill="freeze"/>
+        <animate attributeName="stroke" 
+                 values="#304080;#80a0ff;#304080" 
+                 dur="3.2s" 
+                 repeatCount="indefinite"/>
+      </line>
+      
+      <!-- Right vertical line of square -->
+      <line x1="300" y1="150" x2="300" y2="275" opacity="0">
+        <animate attributeName="opacity"
+               from="0"
+               to="1"
+               dur="1s"
+               begin="1.5s"
+               fill="freeze"/>
+        <animate attributeName="stroke" 
+                 values="#405090;#80a0ff;#405090" 
+                 dur="2.6s" 
+                 repeatCount="indefinite"/>
+      </line>
+      
+      <!-- Bottom horizontal line of square -->
+      <line x1="175" y1="275" x2="300" y2="275" opacity="0">
+        <animate attributeName="opacity"
+               from="0"
+               to="1"
+               dur="1s"
+               begin="1.8s"
+               fill="freeze"/>
+        <animate attributeName="stroke" 
+                 values="#304080;#80a0ff;#304080" 
+                 dur="2.8s" 
+                 repeatCount="indefinite"/>
+      </line>
+    </g>
+    
+    <!-- Connection nodes at intersections for smoother appearance -->
+    <g>
+      <!-- Top-left connection -->
+      <circle cx="175" cy="150" r="0" fill="#80a0ff" filter="url(#glow)">
+        <animate attributeName="r" values="0;4;3" dur="2s" begin="0.8s" fill="freeze" />
+        <animate attributeName="opacity" values="0;1;0.8" dur="2s" begin="0.8s" fill="freeze" />
+        <animate attributeName="fill" values="#80a0ff;#ffffff;#80a0ff" dur="3s" repeatCount="indefinite" begin="2s" />
+      </circle>
+      
+      <!-- Middle-left connection -->
+      <circle cx="175" cy="275" r="0" fill="#80a0ff" filter="url(#glow)">
+        <animate attributeName="r" values="0;4;3" dur="2s" begin="1.2s" fill="freeze" />
+        <animate attributeName="opacity" values="0;1;0.8" dur="2s" begin="1.2s" fill="freeze" />
+        <animate attributeName="fill" values="#80a0ff;#ffffff;#80a0ff" dur="3.2s" repeatCount="indefinite" begin="2.2s" />
+      </circle>
+      
+      <!-- Bottom-left connection -->
+      <circle cx="175" cy="400" r="0" fill="#80a0ff" filter="url(#glow)">
+        <animate attributeName="r" values="0;4;3" dur="2s" begin="1.4s" fill="freeze" />
+        <animate attributeName="opacity" values="0;1;0.8" dur="2s" begin="1.4s" fill="freeze" />
+        <animate attributeName="fill" values="#80a0ff;#ffffff;#80a0ff" dur="2.8s" repeatCount="indefinite" begin="2.4s" />
+      </circle>
+      
+      <!-- Top-right connection -->
+      <circle cx="300" cy="150" r="0" fill="#80a0ff" filter="url(#glow)">
+        <animate attributeName="r" values="0;4;3" dur="2s" begin="1.6s" fill="freeze" />
+        <animate attributeName="opacity" values="0;1;0.8" dur="2s" begin="1.6s" fill="freeze" />
+        <animate attributeName="fill" values="#80a0ff;#ffffff;#80a0ff" dur="3.4s" repeatCount="indefinite" begin="2.6s" />
+      </circle>
+      
+      <!-- Middle-right connection -->
+      <circle cx="300" cy="275" r="0" fill="#80a0ff" filter="url(#glow)">
+        <animate attributeName="r" values="0;4;3" dur="2s" begin="1.8s" fill="freeze" />
+        <animate attributeName="opacity" values="0;1;0.8" dur="2s" begin="1.8s" fill="freeze" />
+        <animate attributeName="fill" values="#80a0ff;#ffffff;#80a0ff" dur="3s" repeatCount="indefinite" begin="2.8s" />
+      </circle>
+      
+      <!-- Bottom-right connection -->
+      <circle cx="300" cy="400" r="0" fill="#80a0ff" filter="url(#glow)">
+        <animate attributeName="r" values="0;4;3" dur="2s" begin="2s" fill="freeze" />
+        <animate attributeName="opacity" values="0;1;0.8" dur="2s" begin="2s" fill="freeze" />
+        <animate attributeName="fill" values="#80a0ff;#ffffff;#80a0ff" dur="2.6s" repeatCount="indefinite" begin="3s" />
+      </circle>
+    </g>
+  
+    <!-- Subtle energy pulses along the lines - very subdued -->
+    <g filter="url(#glow)" opacity="0.5">
+      <!-- Pulse along vertical line -->
+      <circle cx="175" cy="100" r="1.5" fill="#ffffff">
+        <animate attributeName="cy" 
+                 values="100;400;100" 
+                 dur="6s" 
+                 repeatCount="indefinite"
+                 begin="2.5s"/>
+        <animate attributeName="opacity" 
+                 values="0;0.7;0" 
+                 dur="6s" 
+                 repeatCount="indefinite"
+                 begin="2.5s"/>
+      </circle>
+      
+      <!-- Pulse along top horizontal -->
+      <circle cx="90" cy="150" r="1.5" fill="#ffffff">
+        <animate attributeName="cx" 
+                 values="90;300;90" 
+                 dur="5s" 
+                 repeatCount="indefinite"
+                 begin="3s"/>
+        <animate attributeName="opacity" 
+                 values="0;0.7;0" 
+                 dur="5s" 
+                 repeatCount="indefinite"
+                 begin="3s"/>
+      </circle>
+      
+      <!-- Pulse along diagonal -->
+      <circle cx="175" cy="275" r="1.5" fill="#ffffff">
+        <animate attributeName="cx" 
+                 values="175;300;175" 
+                 dur="4s" 
+                 repeatCount="indefinite"
+                 begin="3.5s"/>
+        <animate attributeName="cy" 
+                 values="275;400;275" 
+                 dur="4s" 
+                 repeatCount="indefinite"
+                 begin="3.5s"/>
+        <animate attributeName="opacity" 
+                 values="0;0.7;0" 
+                 dur="4s" 
+                 repeatCount="indefinite"
+                 begin="3.5s"/>
+      </circle>
+    </g>
+  </g>
+  <!-- Restart animation -->
+  <animate attributeName="visibility" 
+           from="visible" 
+           to="visible" 
+           dur="12s" 
+           begin="0s" 
+           repeatCount="indefinite"/>
+</svg>
