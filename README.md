@@ -2,7 +2,7 @@
 
 <div><img src="readme/background.svg" width="100%" alt="Decorative background for Tyrel's GitHub profile"></div>
 
-Software Development Engineer (AI) with an MSc in Artificial Intelligence and over 4 years of experience in Python, AI/ML deployment, and cloud solutions. I specialize in Large Language Models (LLMs), LangChain, LangGraph, and cloud platforms like Azure and GCP. Passionate about building scalable, ethical AI solutions and contributing to innovative projects in backend development and MLOps.
+Software Development Engineer (AI) with an MSc in Artificial Intelligence and over 4 years of experience in Python, AI/ML deployment, and cloud solutions. I specialize in Large Language Models (LLMs), LangChain, LangGraph, and cloud platforms like Azure and GCP. Passionate about building scalable, ethical AI solutions and contributing to innovative projects in backend development and MLOps. [Visit My Portfolio 🌐](https://tyrelm10.github.io/portfolio/)
 
 <!-- <div><a href="https://x.com/TyrelM10"><img src="readme/twitter.svg" width="19.5%" height=120 alt="Twitter Tyrel Menezes"></a><a href="https://www.linkedin.com/in/tyrel-menezes/"><img src="readme/linkedin.svg" width="19.5%" height=120 alt="LinkedIn Tyrel Menezes"></a><a href="https://tyrelm10.github.io/portfolio/"><img src="readme/logo.svg" width="22%" height=120 alt="Tyrel's Portfolio"></a><a href="https://github.com/TyrelM10"><img src="readme/github.svg" width="19.5%" height=120 alt="GitHub TyrelM10"></a><a href="https://tyrelm10.github.io/portfolio/"><img src="readme/portfolio.svg" width="19.5%" height=120 alt="Portfolio Tyrel Menezes"></a></div>
 <div><img src="readme/hero.svg" width="100%" alt="Tyrel with a speech bubble showcasing a passion for AI and scalable solutions"></div>
