@@ -1,6 +1,6 @@
 # Tyrel Menezes
 
-<div style="width: 80%; height: auto;"><img src="readme/background.svg" width="50%" alt="Decorative background for Tyrel's GitHub profile"><div>
+<div style="width: 80%; height: auto; justify-content:center;"><img src="readme/background.svg" width="60%" alt="Decorative background for Tyrel's GitHub profile"><div>
 
 ---
 **Software Development Engineer (AI)** with an **MSc in Artificial Intelligence** and over 4 years of experience in **Python, AI/ML deployment, and cloud solutions**. I specialize in **Large Language Models (LLMs)**, **LangChain**, **LangGraph**, and <u>_have experience taking projects from development to training and deploying AI models to production_</u> using platforms of **Azure** and **Google Cloud Platform (GCP)**. Passionate about building scalable, ethical AI solutions and contributing to innovative projects in backend development and MLOps. [Visit My Portfolio 🌐](https://tyrelm10.github.io/portfolio/)
