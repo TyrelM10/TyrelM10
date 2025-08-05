@@ -33,7 +33,7 @@
 
 ---
 ## Get in Touch
-- 📧 Email: [timenezes08@gmail.com](mailto:timenezes08@gmail.com)
+- 📧 Email: [tjmenezes08@gmail.com](mailto:tjmenezes08@gmail.com)
 - 📍 Location: United Kingdom
 - 🌐 Portfolio: [tyrelm10.github.io/portfolio/](https://tyrelm10.github.io/portfolio/)
 - 💻 GitHub: [github.com/TyrelM10](https://github.com/TyrelM10)
